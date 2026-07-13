@@ -1,0 +1,2 @@
+try{let t=typeof window<`u`?window:e===void 0?typeof globalThis<`u`?globalThis:typeof self<`u`?self:{}:e,n=new t.Error().stack;n&&(t._sentryDebugIds=t._sentryDebugIds||{},t._sentryDebugIds[n]=`91a687c9-eec6-4e78-bd04-f003c87cefc4`,t._sentryDebugIdIdentifier=`sentry-dbid-91a687c9-eec6-4e78-bd04-f003c87cefc4`)}catch{}var e=globalThis||self;{let t=typeof window<`u`?window:e===void 0?typeof globalThis<`u`?globalThis:typeof self<`u`?self:{}:e;t.SENTRY_RELEASE={id:`embedded-v0.22.0-rc.2`}}export{e as t};
+//# sourceMappingURL=_sentry-release-injection-file-CDVZ-ekG.js.map
