@@ -1,0 +1,11 @@
+{
+  "revision": "0dea8b705978420942100ebbe097d525d4e08f06",
+  "version": "0.25.0-letro.1",
+  "contract": {
+    "version": 1,
+    "brands": [
+      "element",
+      "letro"
+    ]
+  }
+}
