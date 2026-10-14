@@ -1,0 +1,18 @@
+{
+  "revision": "7436f275f67a0a884b384788ded60b375f266c15",
+  "version": "0.26.1-letro.1",
+  "upstream_revision": "4b73ce68e36dffb530eb7aa73f5e5976efebb140",
+  "contract": {
+    "version": 1,
+    "brands": [
+      "element",
+      "letro"
+    ]
+  },
+  "validation": {
+    "unit_and_storybook_passed": 1031,
+    "skipped": 7,
+    "branding_browser_scenarios": 8,
+    "physical_ios_playback": "pending"
+  }
+}
