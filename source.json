@@ -1,7 +1,6 @@
 {
-  "revision": "7436f275f67a0a884b384788ded60b375f266c15",
-  "version": "0.26.1-letro.1",
-  "upstream_revision": "4b73ce68e36dffb530eb7aa73f5e5976efebb140",
+  "revision": "7d2cb8aff3802415faf80acfb537fab256fbf9b5",
+  "version": "0.26.1-letro.2",
   "contract": {
     "version": 1,
     "brands": [
@@ -9,10 +8,18 @@
       "letro"
     ]
   },
+  "upstream_revision": "4b73ce68e36dffb530eb7aa73f5e5976efebb140",
+  "build": {
+    "workflow_run": "https://github.com/p-num/element-call/actions/runs/39733295518",
+    "artifact_id": 12406302151,
+    "artifact_name": "letro-call-embedded"
+  },
+  "runtime_config": {
+    "preserved_from": "f46696ecea84999e3af2b18559a2cfc149866590",
+    "sha256": "d2fe789fd2879c8cb123bde862883ac980e6183698d1f86d9c2b4674a590cea5"
+  },
   "validation": {
-    "unit_and_storybook_passed": 1031,
-    "skipped": 7,
-    "branding_browser_scenarios": 8,
+    "source_tests": "https://github.com/p-num/element-call/actions/runs/39733295537",
     "physical_ios_playback": "pending"
   }
 }
