@@ -2,6 +2,12 @@
 
 SwiftPM package containing an embedded build of the Element Call widget.
 
+## Build provenance
+
+`source.json` records the exact Element Call source, package version and CI artifact used for this bundle. The compiled assets come from that artifact; the existing `Sources/dist/config.json` retains the app's MatrixRTC timing configuration.
+
+iOS loads these resources through `EmbeddedElementCall.appURL`. Updating a hosted Element Call instance does not update this package. The consuming app must pin the rebuilt package, and its bundled-call contract test checks the executable JavaScript for the host extensions it requires.
+
 ## Copyright & License
 
 Copyright 2021-2025 New Vector Ltd
