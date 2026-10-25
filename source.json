@@ -1,5 +1,5 @@
 {
-  "revision": "163986a598274100c477c379f7b9635ecbc9612d",
+  "revision": "e027c684d36b77e688b67221a15a35908e4e6a70",
   "version": "0.26.1-letro.2",
   "contract": {
     "version": 1,
@@ -18,7 +18,7 @@
     "sha256": "d2fe789fd2879c8cb123bde862883ac980e6183698d1f86d9c2b4674a590cea5"
   },
   "validation": {
-    "source_unit_tests": "1019 passed, 7 unchanged skips",
+    "source_unit_tests": "1021 passed, 7 unchanged skips",
     "source_story_tests": "45 passed",
     "native_android_runtime": "pending"
   }
