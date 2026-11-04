@@ -1,6 +1,6 @@
 {
-  "revision": "7d2cb8aff3802415faf80acfb537fab256fbf9b5",
-  "version": "0.26.1-letro.2",
+  "revision": "4e0cf0db81d630228105da533b0914084e10f761",
+  "version": "0.26.1-letro.2+counterpart.4e0cf0db8",
   "contract": {
     "version": 1,
     "brands": [
@@ -10,16 +10,20 @@
   },
   "upstream_revision": "4b73ce68e36dffb530eb7aa73f5e5976efebb140",
   "build": {
-    "workflow_run": "https://github.com/p-num/element-call/actions/runs/39733295518",
-    "artifact_id": 12406302151,
-    "artifact_name": "letro-call-embedded"
+    "kind": "local",
+    "command": "RAYON_NUM_THREADS=2 UV_THREADPOOL_SIZE=2 GOMAXPROCS=2 VITE_APP_VERSION=0.26.1-letro.2+counterpart.4e0cf0db8 SENTRY_AUTH_TOKEN= node --max-old-space-size=4096 node_modules/vite/bin/vite.js build --config vite-embedded.config.ts"
   },
   "runtime_config": {
-    "preserved_from": "f46696ecea84999e3af2b18559a2cfc149866590",
+    "preserved_from": "14f7961e2a8cafb9d484ba114b4e1f4367f636ab",
     "sha256": "d2fe789fd2879c8cb123bde862883ac980e6183698d1f86d9c2b4674a590cea5"
   },
   "validation": {
-    "source_tests": "https://github.com/p-num/element-call/actions/runs/39733295537",
-    "physical_ios_playback": "pending"
+    "source_unit_tests": "1030 passed, 7 existing skips",
+    "source_typecheck": "passed",
+    "source_affected_file_lint": "passed",
+    "native_ios_runtime": "not run",
+    "native_android_runtime": "not run",
+    "swiftpm_resources": "passed: loaded the resource bundle and verified the compiled call-title JavaScript SHA-256",
+    "compiled_title_source_map": "matches the tested src/room/useRoomName.ts at the recorded source revision"
   }
 }
