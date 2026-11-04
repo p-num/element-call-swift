@@ -21,5 +21,15 @@
   "validation": {
     "source_tests": "https://github.com/p-num/element-call/actions/runs/39733295537",
     "physical_ios_playback": "pending"
+  },
+  "upstream_stable": {
+    "app_releases": {
+      "ios": "release/26.10.8",
+      "android": "v26.10.1"
+    },
+    "call_release": "v0.26.1",
+    "call_revision": "9f7c35cd8f84b12f9395e6aac56fd396a3921482",
+    "swift_release": "0.26.1",
+    "swift_revision": "befb5d37a7859ad38cf83719cbfd4abaffa04d82"
   }
 }
