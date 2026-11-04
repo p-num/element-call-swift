@@ -1,6 +1,6 @@
 {
-  "revision": "e027c684d36b77e688b67221a15a35908e4e6a70",
-  "version": "0.26.1-letro.2",
+  "revision": "4e0cf0db81d630228105da533b0914084e10f761",
+  "version": "0.26.1-letro.2+counterpart.4e0cf0db8",
   "contract": {
     "version": 1,
     "brands": [
@@ -11,15 +11,19 @@
   "upstream_revision": "4b73ce68e36dffb530eb7aa73f5e5976efebb140",
   "build": {
     "kind": "local",
-    "command": "RAYON_NUM_THREADS=2 UV_THREADPOOL_SIZE=2 GOMAXPROCS=2 VITE_APP_VERSION=0.26.1-letro.2 node --max-old-space-size=4096 node_modules/vite/bin/vite.js build --config vite-embedded.config.ts"
+    "command": "RAYON_NUM_THREADS=2 UV_THREADPOOL_SIZE=2 GOMAXPROCS=2 VITE_APP_VERSION=0.26.1-letro.2+counterpart.4e0cf0db8 SENTRY_AUTH_TOKEN= node --max-old-space-size=4096 node_modules/vite/bin/vite.js build --config vite-embedded.config.ts"
   },
   "runtime_config": {
-    "preserved_from": "2c38018bb8e0915c46a0ae71b7de52cddd21821e",
+    "preserved_from": "14f7961e2a8cafb9d484ba114b4e1f4367f636ab",
     "sha256": "d2fe789fd2879c8cb123bde862883ac980e6183698d1f86d9c2b4674a590cea5"
   },
   "validation": {
-    "source_unit_tests": "1021 passed, 7 unchanged skips",
-    "source_story_tests": "45 passed",
-    "native_android_runtime": "pending"
+    "source_unit_tests": "1030 passed, 7 existing skips",
+    "source_typecheck": "passed",
+    "source_affected_file_lint": "passed",
+    "native_ios_runtime": "not run",
+    "native_android_runtime": "not run",
+    "swiftpm_resources": "passed: loaded the resource bundle and verified the compiled call-title JavaScript SHA-256",
+    "compiled_title_source_map": "matches the tested src/room/useRoomName.ts at the recorded source revision"
   }
 }
