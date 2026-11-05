@@ -1,6 +1,6 @@
 {
-  "revision": "4e0cf0db81d630228105da533b0914084e10f761",
-  "version": "0.26.1-letro.2+counterpart.4e0cf0db8",
+  "revision": "1cdf25c5ae7a6f226b9e6c923fee6f6c6b947a71",
+  "version": "0.28.2-letro.1+1cdf25c5",
   "contract": {
     "version": 1,
     "brands": [
@@ -8,32 +8,22 @@
       "letro"
     ]
   },
-  "upstream_revision": "4b73ce68e36dffb530eb7aa73f5e5976efebb140",
+  "upstream_revision": "b4dd44bd78c1296fb8c28519bfc41cb488d636fd",
+  "upstream_wrapper_revision": "abb0619fa3260262c72b8c8a2949e525632d43b1",
+  "upstream_ios_revision": "4447399a32d4a6f1106dd724441824002bf113a9",
   "build": {
     "kind": "local",
-    "command": "RAYON_NUM_THREADS=2 UV_THREADPOOL_SIZE=2 GOMAXPROCS=2 VITE_APP_VERSION=0.26.1-letro.2+counterpart.4e0cf0db8 SENTRY_AUTH_TOKEN= node --max-old-space-size=4096 node_modules/vite/bin/vite.js build --config vite-embedded.config.ts"
+    "command": "VITE_APP_VERSION=0.28.2-letro.1+1cdf25c5 SENTRY_AUTH_TOKEN= RAYON_NUM_THREADS=2 UV_THREADPOOL_SIZE=2 GOMAXPROCS=2 node --max-old-space-size=4096 node_modules/vite/bin/vite.js build --config vite-embedded.config.ts",
+    "dist_manifest_sha256": "54d1d63e03a0430127c0d1a969be18f4950241e88f7e280f543f5b9560d81386"
   },
   "runtime_config": {
-    "preserved_from": "14f7961e2a8cafb9d484ba114b4e1f4367f636ab",
+    "preserved_from": "097e3bf50bc44284af7d79d1f7fc7603ab7509da",
     "sha256": "d2fe789fd2879c8cb123bde862883ac980e6183698d1f86d9c2b4674a590cea5"
   },
   "validation": {
-    "source_unit_tests": "1030 passed, 7 existing skips",
-    "source_typecheck": "passed",
-    "source_affected_file_lint": "passed",
-    "native_ios_runtime": "not run",
-    "native_android_runtime": "not run",
-    "swiftpm_resources": "passed: loaded the resource bundle and verified the compiled call-title JavaScript SHA-256",
-    "compiled_title_source_map": "matches the tested src/room/useRoomName.ts at the recorded source revision"
-  },
-  "upstream_stable": {
-    "app_releases": {
-      "ios": "release/26.10.8",
-      "android": "v26.10.1"
-    },
-    "call_release": "v0.26.1",
-    "call_revision": "9f7c35cd8f84b12f9395e6aac56fd396a3921482",
-    "swift_release": "0.26.1",
-    "swift_revision": "befb5d37a7859ad38cf83719cbfd4abaffa04d82"
+    "source_tests": "1086 passed, 7 skipped",
+    "source_typecheck_lint_format_i18n": "passed",
+    "compiled_host_bridge_contracts": "passed",
+    "swiftpm_resources": "passed local consumer resource and bridge check"
   }
 }

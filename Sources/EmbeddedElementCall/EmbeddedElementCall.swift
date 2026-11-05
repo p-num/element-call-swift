@@ -11,4 +11,4 @@ public let appURL = Bundle.module.url(forResource: "index", withExtension: "html
 
 public let bundle = Bundle.module
 
-public let version = "0.26.1-letro.2+counterpart.4e0cf0db8"
+public let version = "0.28.2-letro.1+1cdf25c5"
