@@ -25,5 +25,15 @@
     "native_android_runtime": "not run",
     "swiftpm_resources": "passed: loaded the resource bundle and verified the compiled call-title JavaScript SHA-256",
     "compiled_title_source_map": "matches the tested src/room/useRoomName.ts at the recorded source revision"
+  },
+  "upstream_stable": {
+    "app_releases": {
+      "ios": "release/26.10.8",
+      "android": "v26.10.1"
+    },
+    "call_release": "v0.26.1",
+    "call_revision": "9f7c35cd8f84b12f9395e6aac56fd396a3921482",
+    "swift_release": "0.26.1",
+    "swift_revision": "befb5d37a7859ad38cf83719cbfd4abaffa04d82"
   }
 }
