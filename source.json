@@ -1,6 +1,6 @@
 {
-  "revision": "1cdf25c5ae7a6f226b9e6c923fee6f6c6b947a71",
-  "version": "0.28.2-letro.1+1cdf25c5",
+  "revision": "f38adbc35cf5a70dfd51f2c72f2f6d42131b6f22",
+  "version": "0.28.2-letro.2+f38adbc35",
   "contract": {
     "version": 1,
     "brands": [
@@ -13,17 +13,20 @@
   "upstream_ios_revision": "4447399a32d4a6f1106dd724441824002bf113a9",
   "build": {
     "kind": "local",
-    "command": "VITE_APP_VERSION=0.28.2-letro.1+1cdf25c5 SENTRY_AUTH_TOKEN= RAYON_NUM_THREADS=2 UV_THREADPOOL_SIZE=2 GOMAXPROCS=2 node --max-old-space-size=4096 node_modules/vite/bin/vite.js build --config vite-embedded.config.ts",
-    "dist_manifest_sha256": "54d1d63e03a0430127c0d1a969be18f4950241e88f7e280f543f5b9560d81386"
+    "command": "VITE_APP_VERSION=0.28.2-letro.2+f38adbc35 VITE_PACKAGE=embedded VITE_PRODUCT_NAME=Letro SENTRY_AUTH_TOKEN= RAYON_NUM_THREADS=2 UV_THREADPOOL_SIZE=2 node --max-old-space-size=4096 node_modules/vite/bin/vite.js build --config vite-embedded.config.ts",
+    "dist_manifest_sha256": "102cf54a5be8574b478d18bb508f059c6129519209d7060a8121a2159ab38c76",
+    "dist_manifest_format": "JSON object of relative path to SHA256, sorted keys, compact separators"
   },
   "runtime_config": {
     "preserved_from": "097e3bf50bc44284af7d79d1f7fc7603ab7509da",
     "sha256": "d2fe789fd2879c8cb123bde862883ac980e6183698d1f86d9c2b4674a590cea5"
   },
   "validation": {
-    "source_tests": "1086 passed, 7 skipped",
-    "source_typecheck_lint_format_i18n": "passed",
+    "source_tests": "1095 passed, 7 existing skips; unit and browser projects",
+    "source_typecheck_lint_format_i18n": "passed locally",
     "compiled_host_bridge_contracts": "passed",
-    "swiftpm_resources": "passed local consumer resource and bridge check"
+    "runtime_config": "preserved byte for byte",
+    "consuming_android_acceptance": "tracked in p-num/element-x-android PR155 and its feature completion review",
+    "swiftpm_resources": "158 actual compiled consumer resources and exported version verified locally"
   }
 }
