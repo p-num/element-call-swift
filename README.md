@@ -8,6 +8,8 @@ SwiftPM package containing an embedded build of the Element Call widget.
 
 iOS loads these resources through `EmbeddedElementCall.appURL`. Updating a hosted Element Call instance does not update this package. The consuming app must pin the rebuilt package, and its bundled-call contract test checks the executable JavaScript for the host extensions it requires.
 
+The host controls Sentry errors and performance independently through `sentryCrashReportingEnabled` and `sentryPerformanceReportingEnabled`, and can update them through `controls.setSentryReportingEnabled`. `dist/call-build.json` identifies the release and source-map URL prefix used by the consuming app's archive upload.
+
 ## Copyright & License
 
 Copyright 2021-2025 New Vector Ltd
