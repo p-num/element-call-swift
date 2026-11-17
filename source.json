@@ -26,7 +26,7 @@
     "touched_source_lint_format": "passed locally",
     "runtime_config": "preserved byte for byte",
     "bundle_policy_contracts": "11 tests in 3 suites passed against actual SwiftPM resources",
-    "full_app_build": "Validated separately by the consuming iOS change",
+    "full_app_build": "Owned by the consuming iOS application; see its validation report",
     "installed_sdk_source": "234 source files byte-identical to pinned SDK revision 9f6d88ea153a8a9b98906b0fdec4cf25fc70515f"
   },
   "matrix_js_sdk": {
