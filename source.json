@@ -1,6 +1,6 @@
 {
-  "revision": "e1849d1d651dc90e17ef2c580e5de4d09d9f3603",
-  "version": "0.28.2-letro.8+e1849d1d6",
+  "revision": "e1408be12a533558e0d23fe82a238205ec4870cd",
+  "version": "0.28.2-letro.9+e1408be12",
   "contract": {
     "version": 1,
     "brands": [
@@ -13,18 +13,19 @@
   "upstream_ios_revision": "4447399a32d4a6f1106dd724441824002bf113a9",
   "build": {
     "kind": "local",
-    "command": "node --max-old-space-size=4096 node_modules/vite/bin/vite.js build --outDir /Users/ehsanahmadi/element/worktrees/call-mute-ownership/agent-workspace/call-mute-ownership/builds/dist-embedded --config vite-embedded.config.ts",
-    "dist_manifest_sha256": "bab09ef557f27b0d45098745ce4e2278bf0e7122efbf07ea669e9358f7463ffe",
+    "command": "node --max-old-space-size=4096 node_modules/vite/bin/vite.js build --outDir ./dist --config vite-embedded.config.ts",
+    "dist_manifest_sha256": "f0f213493cf676ee1a7fc0691935de3d369a439db3b3a72f320b65cd47b377de",
     "dist_manifest_format": "JSON object of relative path to SHA256, sorted keys, compact separators",
     "livekit_version": "2.23.0",
     "livekit_patch_sha256": "f9bbabdd9212aa18e23251e837446d84022b45635d43b024d64b33c691894fc9",
     "livekit_esm_sha256": "ca74d9b7b9825eb7516307d451f3594211a7305a9eb321881ee2461ef66f787a",
     "environment": {
-      "VITE_APP_VERSION": "0.28.2-letro.8+e1849d1d6",
+      "VITE_APP_VERSION": "0.28.2-letro.9+e1408be12",
       "VITE_PRODUCT_NAME": "Letro",
       "RAYON_NUM_THREADS": "2",
       "UV_THREADPOOL_SIZE": "2",
-      "sentry_upload_enabled": false
+      "sentry_upload_enabled": false,
+      "VITE_IOS_SENTRY_ATTACHMENTS": "true"
     }
   },
   "runtime_config": {
@@ -32,11 +33,9 @@
     "sha256": "d2fe789fd2879c8cb123bde862883ac980e6183698d1f86d9c2b4674a590cea5"
   },
   "validation": {
-    "behavior_pin": "12 capture binding tests and16 mute tests passed before and after ownership cleanup; two unsafe query alternatives detected",
-    "full_local_gates": "Types, oxlint, knip, component externals, formatting and localization passed;1298unit tests passed with7existing skips;45Storybook tests passed in installed Chrome",
-    "production_builds": "Embedded, standalone/widget and component builds passed; five committed source bodies verified in every target source map",
-    "consuming_iOS": "The consuming app records native verification separately against this immutable package revision",
-    "physical_interruption": "Actual iPhone WhatsApp, FaceTime and cellular recovery remains unverified"
+    "renderer": "Type and lint checks, formatting, localization, 1309 unit tests and 45 browser tests passed. Seven existing tests were skipped.",
+    "production_build": "Two iOS-flagged embedded builds reproduced all executable assets. One map differed only in Vite-generated virtual asset IDs. The exact transport, consent and initialization sources are present in the packaged map.",
+    "consuming_iOS": "The consuming app verifies the native bridge and exact bundle pin separately."
   },
   "matrix_js_sdk": {
     "repository": "https://git.postnumber.com/letro/matrix-js-sdk.git",
@@ -45,5 +44,5 @@
     "version": "44.0.0-letro.2",
     "source_tree": "5eec8ec9ecc1a814c3c02c0d9ae89b2be5808ef8"
   },
-  "previous_wrapper_revision": "ed22614679e47802769de0eb37230ef04e79fd5c"
+  "previous_wrapper_revision": "23dc9e62c68a138e7bab1366f2dd7040982b07ea"
 }
