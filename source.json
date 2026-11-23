@@ -1,6 +1,6 @@
 {
-  "revision": "55f68490081df62a201fa23a7172806451564379",
-  "version": "0.28.2-letro.5+55f684900",
+  "revision": "7d78f4f7e065e502da0262d6323298d93e8e5529",
+  "version": "0.28.2-letro.6+7d78f4f7e",
   "contract": {
     "version": 1,
     "brands": [
@@ -13,21 +13,29 @@
   "upstream_ios_revision": "4447399a32d4a6f1106dd724441824002bf113a9",
   "build": {
     "kind": "local",
-    "command": "VITE_APP_VERSION=0.28.2-letro.5+55f684900 VITE_PACKAGE=embedded VITE_PRODUCT_NAME=Letro SENTRY_AUTH_TOKEN= RAYON_NUM_THREADS=2 UV_THREADPOOL_SIZE=2 node --max-old-space-size=4096 node_modules/vite/bin/vite.js build --config vite-embedded.config.ts --outDir agent-workspace/sdk-package-public-197ec5/dist-final",
-    "dist_manifest_sha256": "158e7a7fc35cc0d17c2352abc59aa822c428ee67f8fe89b887e8d1c4b2461e17",
-    "dist_manifest_format": "JSON object of relative path to SHA256, sorted keys, compact separators"
+    "command": "VITE_APP_VERSION=0.28.2-letro.6+7d78f4f7e VITE_PACKAGE=embedded VITE_PRODUCT_NAME=Letro SENTRY_AUTH_TOKEN= RAYON_NUM_THREADS=2 UV_THREADPOOL_SIZE=2 node --max-old-space-size=4096 node_modules/vite/bin/vite.js build --outDir agent-workspace/call-interruption-recovery/dist-embedded --config vite-embedded.config.ts",
+    "dist_manifest_sha256": "78bbb550e436fb950ee50712101a866396118214fa3678cfda911e2cab254476",
+    "dist_manifest_format": "JSON object of relative path to SHA256, sorted keys, compact separators",
+    "livekit_version": "2.23.0",
+    "livekit_patch_sha256": "c9e3524d002820442a66da8190f0cc3f420bf849483184ad0ccda99a4d3916e9",
+    "livekit_esm_sha256": "e983c1b5cebee4e659f023986a75f0d3e355fa2a22bf12e9216ad4b4520b6bcf",
+    "postprocess": "Preserve runtime config.json and write call-build.json for the reviewed renderer revision"
   },
   "runtime_config": {
-    "preserved_from": "bc5924088cbf9cf53d1ba3211d330f95efe2351f",
+    "preserved_from": "25520a2f37f1be77a04961c190971fb847e101eb",
     "sha256": "d2fe789fd2879c8cb123bde862883ac980e6183698d1f86d9c2b4674a590cea5"
   },
   "validation": {
-    "focused_source_tests": "278 passed locally against public mirrored SDK tarball",
-    "touched_source_lint_format": "passed locally",
-    "runtime_config": "preserved byte for byte",
-    "bundle_policy_contracts": "pending local Swift package check",
-    "full_app_build": "Owned by the consuming iOS application",
-    "installed_sdk_source": "234 source files byte-identical to public mirrored SDK tag v44.0.0-letro.2; 353 compiled SDK source-map entries verified exact"
+    "focused_source_tests": "62 installed ESM/Publisher regressions and 40 TypeScript source checks passed locally",
+    "unit_tests": "140 files: 1,243 passed and 7 skipped on the exact locked Matrix SDK 197ec5",
+    "storybook": "45 passed on Google Chrome 157.0.8103.79 via supported Playwright chrome channel; stock headless shell 1234 download returned HTTP 403",
+    "lint_format_i18n": "Full local gates passed",
+    "renderer_builds": "Embedded, standalone/widget and component production builds passed locally",
+    "installed_livekit_runtime": "ESM SHA256 e983c1b5cebee4e659f023986a75f0d3e355fa2a22bf12e9216ad4b4520b6bcf; all three built source maps match exactly",
+    "independent_review": "Capture/pause and encoding runtime reviews passed; public-path regressions and cancellation races replayed",
+    "runtime_config": "Preserved byte for byte",
+    "full_app_build": "Owned by the consuming iOS application; use its recorded local build and test result",
+    "physical_interruption": "WhatsApp, FaceTime and cellular device recovery remains unverified"
   },
   "matrix_js_sdk": {
     "repository": "https://git.postnumber.com/letro/matrix-js-sdk.git",
@@ -36,5 +44,5 @@
     "version": "44.0.0-letro.2",
     "source_tree": "5eec8ec9ecc1a814c3c02c0d9ae89b2be5808ef8"
   },
-  "previous_wrapper_revision": "bc5924088cbf9cf53d1ba3211d330f95efe2351f"
+  "previous_wrapper_revision": "25520a2f37f1be77a04961c190971fb847e101eb"
 }
