@@ -1,6 +1,6 @@
 {
-  "revision": "1b29867ead91e0438fc64e984ccd1db8f5e68ef4",
-  "version": "0.28.2-letro.9+1b29867ea",
+  "revision": "e1408be12a533558e0d23fe82a238205ec4870cd",
+  "version": "0.28.2-letro.9+e1408be12",
   "contract": {
     "version": 1,
     "brands": [
@@ -14,17 +14,18 @@
   "build": {
     "kind": "local",
     "command": "node --max-old-space-size=4096 node_modules/vite/bin/vite.js build --outDir ./dist --config vite-embedded.config.ts",
-    "dist_manifest_sha256": "d1a53c381f4da40a7528c0b47a7343cfe33f5f71a476ded8ea669ea809ac3db9",
+    "dist_manifest_sha256": "f0f213493cf676ee1a7fc0691935de3d369a439db3b3a72f320b65cd47b377de",
     "dist_manifest_format": "JSON object of relative path to SHA256, sorted keys, compact separators",
     "livekit_version": "2.23.0",
     "livekit_patch_sha256": "f9bbabdd9212aa18e23251e837446d84022b45635d43b024d64b33c691894fc9",
     "livekit_esm_sha256": "ca74d9b7b9825eb7516307d451f3594211a7305a9eb321881ee2461ef66f787a",
     "environment": {
-      "VITE_APP_VERSION": "0.28.2-letro.9+1b29867ea",
+      "VITE_APP_VERSION": "0.28.2-letro.9+e1408be12",
       "VITE_PRODUCT_NAME": "Letro",
       "RAYON_NUM_THREADS": "2",
       "UV_THREADPOOL_SIZE": "2",
-      "sentry_upload_enabled": false
+      "sentry_upload_enabled": false,
+      "VITE_IOS_SENTRY_ATTACHMENTS": "true"
     }
   },
   "runtime_config": {
@@ -32,8 +33,8 @@
     "sha256": "d2fe789fd2879c8cb123bde862883ac980e6183698d1f86d9c2b4674a590cea5"
   },
   "validation": {
-    "renderer": "Type and lint checks, formatting, localization, 1305 unit tests and 45 browser tests passed. Seven existing tests were skipped.",
-    "production_build": "Embedded build passed twice. All executable and other assets matched. One source map differed only in Vite-generated virtual asset IDs. The embedded transport and consent source bodies match the packaged map.",
+    "renderer": "Type and lint checks, formatting, localization, 1309 unit tests and 45 browser tests passed. Seven existing tests were skipped.",
+    "production_build": "Two iOS-flagged embedded builds reproduced all executable assets. One map differed only in Vite-generated virtual asset IDs. The exact transport, consent and initialization sources are present in the packaged map.",
     "consuming_iOS": "The consuming app verifies the native bridge and exact bundle pin separately."
   },
   "matrix_js_sdk": {
