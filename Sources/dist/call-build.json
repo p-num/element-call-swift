@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "release": "0.28.2-letro.8+e1849d1d6",
-  "source_revision": "e1849d1d651dc90e17ef2c580e5de4d09d9f3603",
+  "release": "0.28.2-letro.9+1b29867ea",
+  "source_revision": "1b29867ead91e0438fc64e984ccd1db8f5e68ef4",
   "sentry_url_prefix": "app:///element-call/assets"
 }
